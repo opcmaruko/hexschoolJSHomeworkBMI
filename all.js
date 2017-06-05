@@ -27,17 +27,23 @@ function bmi(e) {
     localStorage.setItem('bminum', JSON.stringify(bminum))
         //BMI分級顏色圈
     if (bmi < 18.5) {
-        lvch.innerHTML = '<div class="lvck lvck-b"><span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-b"> <img src="img/icons_loop.png" alt=""></div></div>'
+        lvch.setAttribute('class', 'lvck lvck-b')
+        lvch.innerHTML = '<span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-b"> <img src="img/icons_loop.png" alt=""></div>'
     } else if (bmi >= 18.5 && bmi <= 23.9) {
-        lvch.innerHTML = '<div class="lvck lvck-g"><span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-g"> <img src="img/icons_loop.png" alt=""></div></div>'
+        lvch.setAttribute('class', 'lvck lvck-g')
+        lvch.innerHTML = '<span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-g"> <img src="img/icons_loop.png" alt=""></div>'
     } else if (bmi > 24 && bmi <= 27.9) {
-        lvch.innerHTML = '<div class="lvck lvck-o"><span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-o"> <img src="img/icons_loop.png" alt=""></div></div>'
+        lvch.setAttribute('class', 'lvck lvck-o')
+        lvch.innerHTML = '<span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-o"> <img src="img/icons_loop.png" alt=""></div>'
     } else if (bmi >= 28 && bmi < 30) {
-        lvch.innerHTML = '<div class="lvck lvck-bo"><span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-bo"> <img src="img/icons_loop.png" alt=""></div></div>'
+        lvch.setAttribute('class', 'lvck lvck-bo')
+        lvch.innerHTML = '<span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-bo"> <img src="img/icons_loop.png" alt=""></div>'
     } else if (bmi >= 30.1 && bmi < 35) {
-        lvch.innerHTML = '<div class="lvck lvck-bbo"><span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-bbo"> <img src="img/icons_loop.png" alt=""></div></div>'
+        lvch.setAttribute('class', 'lvck lvck-bbo')
+        lvch.innerHTML = '<span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-bbo"> <img src="img/icons_loop.png" alt=""></div>'
     } else if (bmi >= 35) {
-        lvch.innerHTML = '<div class="lvck lvck-r"><span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div id="loop" class="loop loopbg-r"> <img src="img/icons_loop.png" alt=""></div></div>'
+        lvch.setAttribute('class', 'lvck lvck-r')
+        lvch.innerHTML = '<span class="checked-v">' + bmi + '</span><br><span class="checked-b">BMI</span><div class="loop loopbg-r"> <img src="img/icons_loop.png" alt=""></div>'
     }
 
 }
