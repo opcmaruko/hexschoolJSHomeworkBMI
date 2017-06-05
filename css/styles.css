@@ -211,15 +211,19 @@ h5 {
     color: #424242;
 }
 
+.checked>p {
+    text-align: center;
+    padding-top: 48px;
+}
+
 .lvck {
     position: relative;
     float: left;
     background: #424242;
     width: 120px;
     height: 120px;
-    border: 6px solid #86D73E;
     border-radius: 50%;
-    /*margin: 92px 0 88px 53px;*/
+    margin: 92px 0 88px 53px;
     padding-top: 35px;
     box-sizing: border-box;
     text-align: center;
@@ -227,49 +231,31 @@ h5 {
 
 .lvck-g {
     border: 6px solid #86D73E;
+    color: #86D73F;
 }
 
 .lvck-b {
     border: 6px solid #31BAF9;
+    color: #31BAF9;
 }
 
 .lvck-o {
     border: 6px solid #FF982D;
+    color: #FF982D;
 }
 
 .lvck-bo {
     border: 6px solid #FF6C02;
+    color: #FF6C02;
 }
 
 .lvck-bbo {
     border: 6px solid #FF6C02;
+    color: #FF6C02;
 }
 
 .lvck-r {
     border: 6px solid #FF1200;
-}
-
-.lvck-g>span {
-    color: #86D73F;
-}
-
-.lvck-b>span {
-    color: #31BAF9;
-}
-
-.lvck-o>span {
-    color: #FF982D;
-}
-
-.lvck-bo>span {
-    color: #FF6C02;
-}
-
-.lvck-bbo>span {
-    color: #FF6C02;
-}
-
-.lvck-r>span {
     color: #FF1200;
 }
 
